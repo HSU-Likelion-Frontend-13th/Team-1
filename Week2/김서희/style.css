@@ -1,0 +1,38 @@
+/* 레이아웃, 정렬 */
+.main-intro {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-profile-list {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  align-items: center;
+}
+
+.about-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.hobby-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobby-box-list {
+  display: flex;
+  flex-direction: row;
+}
