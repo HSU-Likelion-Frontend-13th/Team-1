@@ -35,12 +35,16 @@ body {
 .navbar-list {
   display: flex;
   gap: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
 
   a {
     text-decoration: none;
     color: #000000;
+
+    &:hover {
+      color: #4a86ff;
+    }
   }
 }
 
@@ -62,6 +66,7 @@ body {
     font-family: "Inter", sans-serif;
     font-size: 4vw;
     margin: 0;
+    line-height: 1.5;
   }
 }
 
