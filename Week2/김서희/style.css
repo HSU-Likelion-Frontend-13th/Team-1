@@ -1,8 +1,22 @@
-/* 레이아웃, 정렬 */
+/* 메인 소개글 */
 .main-intro {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
+
+  width: 100vw;
+  height: 44vw;
+
+  background-color: #4a86ff;
+
+  p {
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    font-size: 4vw;
+    margin: 0;
+  }
 }
 
 .about-container {
