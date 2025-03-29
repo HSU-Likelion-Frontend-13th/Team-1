@@ -7,6 +7,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: #f3f5ff;
 }
 
 /* 네비게이션 바 */
@@ -16,7 +17,7 @@ body {
   justify-content: center;
   background-color: #ffffff;
   width: 100vw;
-  margin: 1.4vw 0px;
+  padding: 1.4vw 0px;
 }
 
 .navbar-container {
@@ -70,6 +71,7 @@ body {
   }
 }
 
+/* ABOUT 본문 */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -77,11 +79,68 @@ body {
   align-items: center;
 }
 
+h2 {
+  color: #4a86ff;
+  font-weight: 800;
+  font-size: 3.5vw;
+}
+
 .about-profile-list {
   display: flex;
   justify-content: center;
   gap: 5vw;
   align-items: center;
+}
+
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: #ffffff;
+  width: 19.8vw;
+  height: 25.9vw;
+  border-radius: 16px;
+
+  padding: 2vw 4.8vw;
+
+  img {
+    width: 10.42vw;
+    height: 10.42vw;
+    border-radius: 100%;
+    margin-bottom: 1.3vw;
+  }
+
+  #profile-name {
+    color: #4a86ff;
+    font-weight: bold;
+    font-size: 1.6vw;
+    margin-bottom: 1.3vw;
+  }
+}
+
+.profile-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+  text-align: start;
+  color: #484a64;
+  font-size: 1vw;
+
+  i {
+    font-size: 1.2vw;
+    color: #bfc4d8;
+  }
+}
+
+#profile-phone,
+#profile-mail,
+#profile-address {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
 }
 
 .about-list {
