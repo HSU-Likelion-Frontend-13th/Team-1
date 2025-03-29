@@ -11,32 +11,25 @@ body {
 }
 
 /* 네비게이션 바 */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  width: 100vw;
-  padding: 1.4vw 0px;
-}
-
 .navbar-container {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  background-color: #ffffff;
   width: 100vw;
+  height: 6.25vw;
 }
 
 .logo img {
-  width: 17vw;
-  margin-right: 20vw;
+  width: 17.7vw;
+  margin-right: 17.08vw;
 }
 
 .navbar-list {
   display: flex;
-  gap: 2rem;
-  font-size: 1.2vw;
+  gap: 1.66vw;
+  font-size: 1.45vw;
   font-weight: 500;
 
   a {
@@ -57,7 +50,7 @@ body {
   text-align: center;
 
   width: 100vw;
-  height: 44vw;
+  height: 41.66vw;
 
   background-color: #4a86ff;
 
@@ -65,7 +58,7 @@ body {
     color: #ffffff;
     font-weight: 800;
     font-family: "Inter", sans-serif;
-    font-size: 4vw;
+    font-size: 4.16vw;
     margin: 0;
     line-height: 1.5;
   }
@@ -82,20 +75,20 @@ body {
 h2 {
   color: #4a86ff;
   font-weight: 800;
-  font-size: 3.5vw;
+  font-size: 3.64vw;
   padding: 3.12vw 0px;
 }
 
 h3 {
   color: #000000;
-  font-size: 1.6vw;
+  font-size: 1.66vw;
   margin-bottom: 1.2vw;
 }
 
 .about-profile-list {
   display: flex;
   justify-content: center;
-  gap: 2vw;
+  gap: 2.08vw;
   align-items: center;
 
   margin-bottom: 7vw;
@@ -109,37 +102,36 @@ h3 {
   text-align: center;
 
   background-color: #ffffff;
-  width: 19.8vw;
-  height: 25.9vw;
+  width: 19.79vw;
+  height: 25.93vw;
   border-radius: 0.83vw;
 
-  padding: 2vw 4.8vw;
+  padding: 1.56vw 2.08vw;
 
   img {
-    width: 10.42vw;
-    height: 10.42vw;
+    width: 10.41vw;
+    height: 10.41vw;
     border-radius: 100%;
-    margin-bottom: 1.3vw;
   }
 
   #profile-name {
     color: #4a86ff;
     font-weight: bold;
-    font-size: 1.8vw;
-    margin-bottom: 1.3vw;
+    font-size: 2.08vw;
+    margin: 1.3vw;
   }
 }
 
 .profile-detail {
   display: flex;
   flex-direction: column;
-  gap: 1.2vw;
+  gap: 1.04vw;
   text-align: start;
   color: #484a64;
-  font-size: 1vw;
+  font-size: 0.83vw;
 
   i {
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     color: #bfc4d8;
   }
 }
@@ -149,19 +141,19 @@ h3 {
 #profile-address {
   display: flex;
   align-items: center;
-  gap: 1vw;
+  gap: 0.83vw;
 }
 
 .about-list {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  font-size: 1.25vw;
+  font-size: 1.04vw;
   font-weight: bold;
   color: #626682;
 
-  height: 25.9vw;
-  gap: 8vw;
+  height: 25.93vw;
+  gap: 9.2vw;
 
   p {
     line-height: 1.5;
@@ -173,13 +165,13 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 17.8vw;
+  margin-bottom: 17.81vw;
 }
 
 .hobby-box-list {
   display: flex;
   flex-direction: row;
-  gap: 1.1vw;
+  gap: 1.04vw;
 }
 
 .hobby-box {
@@ -187,21 +179,21 @@ h3 {
   border: #ebedf8;
   border-radius: 0.83vw;
   text-align: center;
-  width: 19.8vw;
+  width: 19.79vw;
 
   p {
     background-color: #4a86ff;
     color: #ffffff;
-    font-size: 1.6vw;
+    font-size: 1.66vw;
     font-weight: bold;
     border-radius: 0.83vw 0.83vw 0px 0px;
-    padding: 1.1vw;
+    padding: 1.04vw;
   }
 
   img {
-    width: 15.6vw;
-    height: 11.4vw;
-    margin: 2vw;
-    border-radius: 0.6vw;
+    width: 15.62vw;
+    height: 11.45vw;
+    margin: 2.08vw;
+    border-radius: 0.4vw;
   }
 }
