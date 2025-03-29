@@ -83,13 +83,22 @@ h2 {
   color: #4a86ff;
   font-weight: 800;
   font-size: 3.5vw;
+  padding: 3.12vw 0px;
+}
+
+h3 {
+  color: #000000;
+  font-size: 1.6vw;
+  margin-bottom: 1.2vw;
 }
 
 .about-profile-list {
   display: flex;
   justify-content: center;
-  gap: 5vw;
+  gap: 2vw;
   align-items: center;
+
+  margin-bottom: 7vw;
 }
 
 .about-profile {
@@ -116,7 +125,7 @@ h2 {
   #profile-name {
     color: #4a86ff;
     font-weight: bold;
-    font-size: 1.6vw;
+    font-size: 1.8vw;
     margin-bottom: 1.3vw;
   }
 }
@@ -130,7 +139,7 @@ h2 {
   font-size: 1vw;
 
   i {
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     color: #bfc4d8;
   }
 }
@@ -145,8 +154,18 @@ h2 {
 
 .about-list {
   display: grid;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  font-size: 1.25vw;
+  font-weight: bold;
+  color: #626682;
+
+  height: 25.9vw;
+  gap: 8vw;
+
+  p {
+    line-height: 1.5;
+  }
 }
 
 .hobby-container {
