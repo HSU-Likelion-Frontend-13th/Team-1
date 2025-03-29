@@ -29,14 +29,14 @@ body {
 }
 
 .logo img {
-  width: 20rem;
+  width: 17vw;
   margin-right: 20vw;
 }
 
 .navbar-list {
   display: flex;
   gap: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.2vw;
   font-weight: 500;
 
   a {
@@ -111,7 +111,7 @@ h3 {
   background-color: #ffffff;
   width: 19.8vw;
   height: 25.9vw;
-  border-radius: 16px;
+  border-radius: 0.83vw;
 
   padding: 2vw 4.8vw;
 
@@ -173,9 +173,35 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 17.8vw;
 }
 
 .hobby-box-list {
   display: flex;
   flex-direction: row;
+  gap: 1.1vw;
+}
+
+.hobby-box {
+  background-color: #ffffff;
+  border: #ebedf8;
+  border-radius: 0.83vw;
+  text-align: center;
+  width: 19.8vw;
+
+  p {
+    background-color: #4a86ff;
+    color: #ffffff;
+    font-size: 1.6vw;
+    font-weight: bold;
+    border-radius: 0.83vw 0.83vw 0px 0px;
+    padding: 1.1vw;
+  }
+
+  img {
+    width: 15.6vw;
+    height: 11.4vw;
+    margin: 2vw;
+    border-radius: 0.6vw;
+  }
 }
