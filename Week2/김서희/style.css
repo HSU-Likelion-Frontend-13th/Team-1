@@ -1,3 +1,49 @@
+/* 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100vw;
+  margin: 1.4vw 0px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.logo img {
+  width: 20rem;
+  margin-right: 20vw;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
 /* 메인 소개글 */
 .main-intro {
   display: flex;
