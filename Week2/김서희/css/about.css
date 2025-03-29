@@ -1,0 +1,95 @@
+/* ABOUT 본문 */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: #4a86ff;
+  font-weight: 800;
+  font-size: 3.64vw;
+  padding: 3.12vw 0px;
+}
+
+h3 {
+  color: #000000;
+  font-size: 1.66vw;
+  margin-bottom: 1.2vw;
+}
+
+.about-profile-list {
+  display: flex;
+  justify-content: center;
+  gap: 2.08vw;
+  align-items: center;
+
+  margin-bottom: 7vw;
+}
+
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: #ffffff;
+  width: 19.79vw;
+  height: 25.93vw;
+  border-radius: 0.83vw;
+
+  padding: 1.56vw 2.08vw;
+
+  img {
+    width: 10.41vw;
+    height: 10.41vw;
+    border-radius: 100%;
+  }
+
+  #profile-name {
+    color: #4a86ff;
+    font-weight: bold;
+    font-size: 2.08vw;
+    margin: 1.3vw;
+  }
+}
+
+.profile-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.04vw;
+  text-align: start;
+  color: #484a64;
+  font-size: 0.83vw;
+
+  i {
+    font-size: 1.2vw;
+    color: #bfc4d8;
+  }
+}
+
+#profile-phone,
+#profile-mail,
+#profile-address {
+  display: flex;
+  align-items: center;
+  gap: 0.83vw;
+}
+
+.about-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.04vw;
+  font-weight: bold;
+  color: #626682;
+
+  height: 25.93vw;
+  gap: 9.2vw;
+
+  p {
+    line-height: 1.5;
+  }
+}

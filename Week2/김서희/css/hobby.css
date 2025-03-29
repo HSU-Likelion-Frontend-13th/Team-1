@@ -1,0 +1,38 @@
+/* HOBBY 본문 */
+.hobby-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17.81vw;
+}
+
+.hobby-box-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1.04vw;
+}
+
+.hobby-box {
+  background-color: #ffffff;
+  border: #ebedf8;
+  border-radius: 0.83vw;
+  text-align: center;
+  width: 19.79vw;
+
+  p {
+    background-color: #4a86ff;
+    color: #ffffff;
+    font-size: 1.66vw;
+    font-weight: bold;
+    border-radius: 0.83vw 0.83vw 0px 0px;
+    padding: 1.04vw;
+  }
+
+  img {
+    width: 15.62vw;
+    height: 11.45vw;
+    margin: 2.08vw;
+    border-radius: 0.4vw;
+  }
+}

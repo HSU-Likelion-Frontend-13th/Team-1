@@ -1,0 +1,21 @@
+/* 메인 소개글 */
+.main-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 100vw;
+  height: 41.66vw;
+
+  background-color: #4a86ff;
+
+  p {
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    font-size: 4.16vw;
+    margin: 0;
+    line-height: 1.5;
+  }
+}

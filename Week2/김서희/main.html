@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week2</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/intro.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/hobby.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+    <style>
+      /* 기본 css 설정 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f5ff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo"><img src="./assets/logo.png" alt="로고" /></div>
+        <div class="navbar-list">
+          <a href="#">ABOUT</a>
+          <a href="#">HOBBY</a>
+          <a href="#">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 소개 사진 -->
+    <div class="main-intro">
+      <p>
+        안녕하세요! <br />
+        제 이름은 김서희 입니다. <br />
+        신뢰도99% 개발자가 되고 싶어요.
+      </p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about-container">
+      <h2>ABOUT</h2>
+      <div class="about-profile-list">
+        <div class="about-profile">
+          <img src="./assets/profile.jpg" alt="프로필사진" />
+          <div id="profile-name">김서희</div>
+          <div class="profile-detail">
+            <div id="profile-phone">
+              <i class="fa-solid fa-phone"></i>010.9339.4039
+            </div>
+            <div id="profile-mail">
+              <i class="fa-solid fa-envelope"></i>2171186@hansung.ac.kr
+            </div>
+            <div id="profile-address">
+              <i class="fa-solid fa-location-dot"></i>
+              서울특별시 성북구 보문로 30가길(안암동1가)
+            </div>
+          </div>
+        </div>
+
+        <div class="about-list">
+          <div class="about-education">
+            <h3>EDUCATION</h3>
+            <p>동탄중앙고등학교<br />2018.03~2021.02</p>
+            <br />
+            <p>한성대학교 컴퓨터공학부<br />2021.03~2026.02</p>
+          </div>
+          <div class="about-skills">
+            <h3>SKILLS</h3>
+            <p>Python<br />Java<br />JavaScript<br />Dart</p>
+          </div>
+          <div class="about-work">
+            <h3>WORK</h3>
+            <p>프론트엔드 개발자</p>
+          </div>
+          <div class="about-activities">
+            <h3>ACTIVITES</h3>
+            <p>멋쟁이사자처럼 13기</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOBBY -->
+    <div class="hobby-container">
+      <h2>HOBBY</h2>
+      <div class="hobby-box-list">
+        <div class="hobby-box">
+          <p>아이러브커피</p>
+          <img src="./assets/coffee.jpg" alt="알커" />
+        </div>
+        <div class="hobby-box">
+          <p>전시회 가기</p>
+          <img src="./assets/exhibition.jpg" alt="전시회" />
+        </div>
+        <div class="hobby-box">
+          <p>강아지 산책</p>
+          <img src="./assets/dog.jpg" alt="산책" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
