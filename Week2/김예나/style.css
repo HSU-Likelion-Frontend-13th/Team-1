@@ -138,3 +138,35 @@ h1 {
         align-items: center;
     }
 }
+
+.about-list-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);    
+    gap: 11.25vw /* 204px */
+}
+
+h2 {
+    font-size: 1.67vw; /* 32px */
+    margin-bottom: 1.2vw; /* 23px */
+}
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #626682;
+    font-weight: bold;
+    font-size: 1.04vw; /* 20px */
+
+    p {
+        line-height: 170%;
+    }
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+}
