@@ -1,0 +1,38 @@
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100vw;
+    height: 41.67vw; /* 800px */
+
+    background-color: #4A86FF;
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 4.17vw; /* 80px */
+    line-height: 150%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 7.5vw; /* 120px */
+}
+
+.logo img {
+    width: 17.71vw; /* 340px */
+    height: 3.23vw; /* 62px */
+    margin-right: 17.17vw; /* 328px */
+}
+
+.list {
+    display: flex;
+    gap: 4.17vw; /* 80px */
+    font-size: 1.46vw; /* 28px */
+}
