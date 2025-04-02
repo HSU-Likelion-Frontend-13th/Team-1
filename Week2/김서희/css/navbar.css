@@ -1,0 +1,31 @@
+/* 네비게이션 바 */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 6.25vw;
+}
+
+.logo img {
+  width: 17.7vw;
+  margin-right: 17.08vw;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 1.66vw;
+  font-size: 1.45vw;
+  font-weight: 500;
+
+  a {
+    text-decoration: none;
+    color: #000000;
+
+    &:hover {
+      color: #4a86ff;
+    }
+  }
+}
