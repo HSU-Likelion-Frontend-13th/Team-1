@@ -1,10 +1,149 @@
 body {
         background-color: #F3F5FF;
-        margin: 0;    
-        padding: 0;
+        margin: 0;
+        padding-bottom: 17.81vw;
+}
+
+header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        height: 6.25vw;
+}
+
+header h3 {
+        color: #4A86FF;
+        margin: 0;
+        font-size: 3.88rem;
+}
+
+nav {
+        margin-left: 17.08vw;
+}
+
+nav a {
+        text-decoration: none;
+        color: black;
+        margin: 1.67vw;
+        font-size: 2rem;
+}
+
+.contents h1 {
+        font-size: 5rem;
+        text-align: center;
+        background: #4A86FF;
+        color: white;
+        padding: 11.56vw;
+        margin: 0;
 }
 
 
+.about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+}
 
+.about h2 {
+        color: #4A86FF;
+        font-size: 3.65vw;
+}
 
+.about-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2.08vw;
+        margin-left: 370px;
+        margin-right: 370px;
+}
+
+.profile {
+        background-color: white;
+        padding: 1.56vw;
+        border-radius: 16px;
+}
+
+.profile h3 {
+        font-size: 2.08vw;
+        color: #4A86FF;
+        text-align: center;
+}
+
+p {
+        font-size: 1.56vw;
+        color: #484A64;
+}
+
+.profile img {
+
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+}
+
+.items img {
+        width: 2.7vw;
+        height: 2.7vw;
+        margin: 0;
+}
+
+.items-card {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+}
+
+.details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10vw;
+}
+
+.details h3 {
+        font-size: 2rem;
+}
+
+.hobby h2 {
+        color: #4A86FF;
+        font-size: 3.65vw;
+        text-align: center;
+}
+
+.hobby-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.1vw;
+}
+
+.hobby-menu {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 16px;
+
+        h3 {
+                font-size: 32px;
+                background-color: #4A86FF;
+                color: white;
+                text-align: center;
+                margin: 0;
+                padding: 20px;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+        }
+}
+
+.hobby-img {
+        padding: 40px;
+}
+
+.hobby img {
+        width: 300px;
+        height: 220px;
+
+}
