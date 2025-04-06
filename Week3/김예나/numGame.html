@@ -58,6 +58,9 @@
       function match() {
         const myGuess = Number(guessField.value);
 
+        if (guessNumber === 1) guesses.textContent = '예측한 숫자들: ';
+        guesses.textContent += myGuess + ' ';
+
         if (myGuess == randomNumber) {
           lastResult.textContent = '축하합니다! 맞혔습니다!';
           lastResult.style.backgroundColor = 'green';
