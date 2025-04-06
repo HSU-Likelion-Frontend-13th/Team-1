@@ -91,6 +91,8 @@
       
       function resetGame() {
         guessNumber = 1;
+        guessField.disabled = false;
+        guessSubmit.disabled = false;
         guesses.textContent = '';
         lastResult.textContent = '';
         lowOrHi.textContent = '';
