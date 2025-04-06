@@ -55,6 +55,24 @@
       const guessField = document.querySelector('.guessField');
       const guessSubmit = document.querySelector('.guessSubmit');
 
+      function match() {
+        const myGuess = Number(guessField.value);
+
+        if (myGuess == randomNumber) {
+          lastResult.textContent = '축하합니다! 맞혔습니다!';
+          lastResult.style.backgroundColor = 'green';
+          lowOrHi.textContent = '';
+          resetGame();
+        } else if (myGuess < randomNumber) {
+          lastResult.textContent = '틀렸습니다!'
+          lastResult.style.backgroundColor = 'red';
+          lowOrHi.textContent = '예측한 값이 작습니다!';
+        } else {
+          lastResult.textContent = '틀렸습니다!';
+          lastResult.style.backgroundColor = 'red';
+          lowOrHi.textContent = '예측한 값이 큽니다!';
+        }
+      }
     </script>
   </body>
 </html>
