@@ -57,7 +57,7 @@
 
       guessSubmit.addEventListener('click', match);
 
-      function match() {
+      const match = () => {
         const myGuess = Number(guessField.value);
 
         if (guessNumber === 1) guesses.textContent = '예측한 숫자들: ';
@@ -85,7 +85,7 @@
         if (guessNumber > 10) setGameOver();
       }
 
-      function setGameOver() {
+      const setGameOver = () => {
         guessField.disabled = true;
         guessSubmit.disabled = true;
         document.querySelector('.resultParas').appendChild(resetBtn);
@@ -97,7 +97,7 @@
 
       resetBtn.addEventListener('click', resetGame);
       
-      function resetGame() {
+      const resetGame = () => {
         guessNumber = 1;
 
         guessField.disabled = false;
