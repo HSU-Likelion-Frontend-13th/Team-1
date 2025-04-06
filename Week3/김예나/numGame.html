@@ -79,9 +79,16 @@
         guessField.focus();
       }
 
+      function setGameOver() {
+        guessField.disabled = true;
+        guessSubmit.disabled = true;
+      }
+
       const resetBtn = document.createElement('button');
       resetBtn.textContent = '새 게임 시작하기';
       resetBtn.style.marginLeft = '5px';
+      
+      
     </script>
   </body>
 </html>
