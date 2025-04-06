@@ -89,7 +89,13 @@
       resetBtn.textContent = '새 게임 시작하기';
       resetBtn.style.marginLeft = '5px';
       
-      
+      function resetGame() {
+        guessNumber = 1;
+        guesses.textContent = '';
+        lastResult.textContent = '';
+        lowOrHi.textContent = '';
+        lastResult.style.backgroundColor = '';
+      }
     </script>
   </body>
 </html>
