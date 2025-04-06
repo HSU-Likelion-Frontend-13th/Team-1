@@ -55,8 +55,6 @@
       const guessField = document.querySelector('.guessField');
       const guessSubmit = document.querySelector('.guessSubmit');
 
-      guessSubmit.addEventListener('click', match);
-
       const match = () => {
         const myGuess = Number(guessField.value);
 
@@ -85,6 +83,8 @@
         if (guessNumber > 10) setGameOver();
       }
 
+      guessSubmit.addEventListener('click', match);
+
       const setGameOver = () => {
         guessField.disabled = true;
         guessSubmit.disabled = true;
@@ -95,8 +95,6 @@
       resetBtn.textContent = '새 게임 시작하기';
       resetBtn.style.marginLeft = '5px';
 
-      resetBtn.addEventListener('click', resetGame);
-      
       const resetGame = () => {
         guessNumber = 1;
 
@@ -115,6 +113,8 @@
 
         randomNumber = Math.floor(Math.random() * 100) + 1;
       }
+
+      resetBtn.addEventListener('click', resetGame);
     </script>
   </body>
 </html>
