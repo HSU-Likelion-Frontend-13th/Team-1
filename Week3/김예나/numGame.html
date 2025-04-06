@@ -88,6 +88,8 @@
       const resetBtn = document.createElement('button');
       resetBtn.textContent = '새 게임 시작하기';
       resetBtn.style.marginLeft = '5px';
+
+      resetBtn.addEventListener('click', resetGame);
       
       function resetGame() {
         guessNumber = 1;
