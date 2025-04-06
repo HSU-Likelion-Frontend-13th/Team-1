@@ -65,7 +65,6 @@
           lastResult.textContent = '축하합니다! 맞혔습니다!';
           lastResult.style.backgroundColor = 'green';
           lowOrHi.textContent = '';
-          resetGame();
         } else if (myGuess < randomNumber) {
           lastResult.textContent = '틀렸습니다!'
           lastResult.style.backgroundColor = 'red';
@@ -79,6 +78,10 @@
         guessField.value = '';
         guessField.focus();
       }
+
+      const resetBtn = document.createElement('button');
+      resetBtn.textContent = '새 게임 시작하기';
+      resetBtn.style.marginLeft = '5px';
     </script>
   </body>
 </html>
