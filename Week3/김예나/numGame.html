@@ -111,7 +111,7 @@
         guessField.value = '';
         guessField.focus();
 
-        resetBtn.remove();
+        document.querySelector('.resultParas').removeChild(resetBtn);
 
         randomNumber = Math.floor(Math.random() * 100) + 1;
       }
