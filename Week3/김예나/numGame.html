@@ -55,6 +55,8 @@
       const guessField = document.querySelector('.guessField');
       const guessSubmit = document.querySelector('.guessSubmit');
 
+      guessSubmit.addEventListener('click', match);
+
       function match() {
         const myGuess = Number(guessField.value);
 
