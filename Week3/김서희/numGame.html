@@ -76,6 +76,18 @@
         return num;
       }
 
+      // 결과 출력 함수
+      function setResult(result = "", hint = "") {
+        lastResult.textContent = result;
+        lowOrHi.textContent = hint;
+      }
+
+      // 입력창 초기화 함수
+      function resetInput() {
+        guessField.value = "";
+        guessField.focus();
+      }
+
       // 입력한 값과 정답을 비교하는 함수
       function checkAnswer() {
         const userAnswer = Number(guessField.value); // 강제 Number 형변환
@@ -83,18 +95,14 @@
         // 오류 처리
         if (!userAnswer || userAnswer < 1 || userAnswer > 100) {
           // 입력을 안 하거나 범위에 벗어난 값을 입력한 경우
-          lastResult.textContent = "1~100 사이의 숫자만 입력 가능합니다.";
-          lowOrHi.textContent = "";
-          guessField.value = "";
-          guessField.focus();
+          setResult("1~100 사이의 숫자만 입력 가능합니다.");
+          resetInput();
           return;
         }
         if (guessesData.has(userAnswer)) {
           // 이미 입력한 수를 또 입력한 경우
-          lastResult.textContent = "이미 입력한 수입니다.";
-          lowOrHi.textContent = "";
-          guessField.value = "";
-          guessField.focus();
+          setResult("이미 입력한 수입니다.");
+          resetInput();
           return;
         }
         guessesData.add(userAnswer);
@@ -105,29 +113,23 @@
         // 정답 판별
         if (userAnswer === randomNum) {
           // 맞은 경우
-          lastResult.textContent = "맞았습니다!";
-          lowOrHi.textContent = "";
+          setResult("맞았습니다!");
           setRetryButton(); // 게임 다시하기 버튼
         } else if (count === 10) {
           // 10번 시도하면 종료
-          lastResult.textContent = "다시 도전해 보세요.";
-          lowOrHi.textContent = "";
+          setResult("다시 도전해 보세요.");
           setRetryButton(); // 게임 다시하기 버튼
         } else {
-          // 틀린 경우
-          lastResult.textContent = "틀렸습니다..";
-          if (userAnswer < randomNum) {
-            // 낮,높 판별
-            lowOrHi.textContent = "Hint: 입력한 숫자는 너무 낮아요.";
-          } else {
-            lowOrHi.textContent = "Hint: 입력한 숫자는 너무 높아요.";
-          }
+          // 틀린 경우 -> 낮,높 판별
+          const hint =
+            userAnswer < randomNum
+              ? "Hint: 입력한 숫자는 너무 낮아요."
+              : "Hint: 입력한 숫자는 너무 높아요.";
+          setResult("틀렸습니다..", hint);
         }
 
         count++; // 시도 횟수 증가
-
-        guessField.value = "";
-        guessField.focus();
+        resetInput();
       }
 
       // 다시하기 버튼을 활성화하는 함수
@@ -152,14 +154,11 @@
         // guess 입력 창, 버튼 초기상태로
         guessField.disabled = false;
         guessSubmit.disabled = false;
-        guessField.value = "";
-        guessField.focus();
+        resetInput();
 
         // resultParas 초기상태로
-        const resultParas = document.querySelectorAll(".resultParas p");
-        for (p of resultParas) {
-          p.textContent = "";
-        }
+        guesses.textContent = "";
+        setResult("");
 
         retryButton.remove(); // 다시하기 버튼 없애기
       }
