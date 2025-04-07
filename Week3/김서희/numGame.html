@@ -66,6 +66,8 @@
       const lastResult = document.querySelector(".lastResult"); // 맞았는지 결과
       const lowOrHi = document.querySelector(".lowOrHi"); // 낮은지 높은지
 
+      const guessesData = new Set(); // 사용자 입력 값들
+
       // 1~100 사이의 난수를 생성하는 함수
       function createRandomNumber() {
         const num = Math.floor(Math.random() * 100) + 1;
@@ -78,7 +80,18 @@
       function checkAnswer() {
         const userAnswer = Number(guessField.value); // 강제 Number 형변환
 
-        if (!userAnswer) return;
+        // 오류 처리
+        if (!userAnswer) return; // 아무것도 입력 안 한 경우
+        if (guessesData.has(userAnswer)) {
+          // 이미 입력한 수를 또 입력한 경우
+          lastResult.textContent = "이미 입력한 수입니다.";
+          lowOrHi.textContent = "";
+          guessField.value = "";
+          guessField.focus();
+
+          return;
+        }
+        guessesData.add(userAnswer);
 
         // 입력한 숫자들 보여주기
         if (count == 1) {
@@ -131,6 +144,7 @@
       function initGame() {
         randomNum = createRandomNumber(); // 난수 생성
         count = 1; // 시도 횟수 초기화
+        guessesData.clear(); // 입력 기록 초기화
 
         // guess 입력 창, 버튼 초기상태로
         guessField.disabled = false;
