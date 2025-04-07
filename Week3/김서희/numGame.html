@@ -100,10 +100,7 @@
         guessesData.add(userAnswer);
 
         // 입력한 숫자들 보여주기
-        if (count == 1) {
-          guesses.textContent = "예측 값: ";
-        }
-        guesses.textContent += userAnswer + " ";
+        guesses.textContent = "예측 값: " + Array.from(guessesData).join(" ");
 
         // 정답 판별
         if (userAnswer === randomNum) {
