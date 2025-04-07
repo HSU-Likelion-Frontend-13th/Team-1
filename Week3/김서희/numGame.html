@@ -23,7 +23,22 @@
 
       .lastResult {
         color: black;
+        padding: 5px;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .guesses {
+        color: #818181;
         padding: 3px;
+        font-weight: bold;
+      }
+
+      .lowOrHi {
+        background-color: #dddcd9;
+        padding: 3px;
+        text-align: center;
       }
     </style>
   </head>
@@ -46,7 +61,7 @@
         id="guessField"
         class="guessField"
       />
-      <input type="submit" value="예측한 숫자 제출하기" class="guessSubmit" />
+      <input type="submit" value="제출하기" class="guessSubmit" />
     </div>
 
     <div class="resultParas">
@@ -69,23 +84,31 @@
       const guessesData = new Set(); // 사용자 입력 값들
 
       // 1~100 사이의 난수를 생성하는 함수
-      const createRandomNumber = () => {
+      function createRandomNumber() {
         const num = Math.floor(Math.random() * 100) + 1;
         console.log("랜덤수: ", num); // 디버깅용
 
         return num;
-      };
+      }
 
       // 결과 출력 함수
       const setResult = (result = "", hint = "") => {
         lastResult.textContent = result;
         lowOrHi.textContent = hint;
+
+        setResultColor();
       };
 
       // 입력창 초기화 함수
       const resetInput = () => {
         guessField.value = "";
         guessField.focus();
+      };
+
+      // 결과 배경, 폰트 색상 변경 함수
+      const setResultColor = (background = "#FFFFFF", color = "#000000") => {
+        lastResult.style.backgroundColor = background;
+        lastResult.style.color = color;
       };
 
       // 입력한 값과 정답을 비교하는 함수
@@ -96,12 +119,14 @@
         if (!userAnswer || userAnswer < 1 || userAnswer > 100) {
           // 입력을 안 하거나 범위에 벗어난 값을 입력한 경우
           setResult("1~100 사이의 숫자만 입력 가능합니다.");
+          setResultColor("#F6D065", "#DA5C5C");
           resetInput();
           return;
         }
         if (guessesData.has(userAnswer)) {
           // 이미 입력한 수를 또 입력한 경우
           setResult("이미 입력한 수입니다.");
+          setResultColor("#F6D065", "#DA5C5C");
           resetInput();
           return;
         }
@@ -114,10 +139,12 @@
         if (userAnswer === randomNum) {
           // 맞은 경우
           setResult("맞았습니다!");
+          setResultColor("#65A96F", "#FFFFFF");
           setRetryButton(); // 게임 다시하기 버튼
         } else if (count === 10) {
           // 10번 시도하면 종료
           setResult("다시 도전해 보세요.");
+          setResultColor("#DDDCD9", "#818181");
           setRetryButton(); // 게임 다시하기 버튼
         } else {
           // 틀린 경우 -> 낮,높 판별
@@ -126,6 +153,7 @@
               ? "Hint: 입력한 숫자는 너무 낮아요."
               : "Hint: 입력한 숫자는 너무 높아요.";
           setResult("틀렸습니다..", hint);
+          setResultColor("#DA5C5C", "#FFFFFF");
         }
 
         count++; // 시도 횟수 증가
