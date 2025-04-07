@@ -49,7 +49,7 @@
 
         const guessesData = new Set(); // 사용자 입력 값들
 
-        // 1~100 사이의 난수를 생성하는 함수
+        // ----- 1~100 사이의 난수를 생성하는 함수 -----
         function createRandomNumber() {
           const num = Math.floor(Math.random() * 100) + 1;
           console.log("랜덤수: ", num); // 디버깅용
@@ -57,7 +57,7 @@
           return num;
         }
 
-        // 결과 출력 함수
+        // ----- 결과 출력 함수 -----
         const setResult = (result = "", hint = "") => {
           lastResult.textContent = result;
           lowOrHi.textContent = hint;
@@ -65,23 +65,23 @@
           setResultColor();
         };
 
-        // 입력창 초기화 함수
+        // ----- 입력창 초기화 함수 -----
         const resetInput = () => {
           guessField.value = "";
           guessField.focus();
         };
 
-        // 결과 배경, 폰트 색상 변경 함수
+        // ----- 결과 배경, 폰트 색상 변경 함수 -----
         const setResultColor = (background = "#FFFFFF", color = "#000000") => {
           lastResult.style.backgroundColor = background;
           lastResult.style.color = color;
         };
 
-        // 입력한 값과 정답을 비교하는 함수
+        // ----- 입력한 값과 정답을 비교하는 함수 -----
         const checkAnswer = () => {
           const userAnswer = Number(guessField.value); // 강제 Number 형변환
 
-          // 오류 처리
+          // ----- 오류 처리
           if (!userAnswer || userAnswer < 1 || userAnswer > 100) {
             // 입력을 안 하거나 범위에 벗어난 값을 입력한 경우
             setResult("1~100 사이의 숫자만 입력 가능합니다.");
@@ -98,10 +98,10 @@
           }
           guessesData.add(userAnswer);
 
-          // 입력한 숫자들 보여주기
+          // ----- 입력한 숫자들 보여주기
           guesses.textContent = "예측 값: " + Array.from(guessesData).join(" ");
 
-          // 정답 판별
+          // ----- 정답 판별
           if (userAnswer === randomNum) {
             // 맞은 경우
             setResult("맞았습니다!");
@@ -126,7 +126,7 @@
           resetInput();
         };
 
-        // 다시하기 버튼을 활성화하는 함수
+        // ----- 다시하기 버튼을 활성화하는 함수 -----
         const setRetryButton = () => {
           // 입력 창과 버튼 비활성화
           guessField.disabled = true;
@@ -140,7 +140,7 @@
           lowOrHi.appendChild(retryButton);
         };
 
-        // 게임을 다시 시작하기 위한 세팅
+        // ----- 게임을 다시 시작하기 위한 세팅
         const initGame = () => {
           randomNum = createRandomNumber(); // 난수 생성
           count = 1; // 시도 횟수 초기화
@@ -158,7 +158,7 @@
           retryButton.remove(); // 다시하기 버튼 없애기
         };
 
-        // 버튼 누르면 checkAnswer 이벤트
+        // ----- 버튼 누르면 checkAnswer 이벤트
         guessSubmit.addEventListener("click", checkAnswer);
       </script>
     </div>
