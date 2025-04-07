@@ -24,14 +24,27 @@
       }
 
       .form input[type="number"] {
-        width: 200px;
+        width: 12.5rem;
       }
 
       .game-screen {
         background-color: #ebfcff;
-        border: 3px solid #0bb1ce;
+        border: 0.2rem solid #0bb1ce;
         border-radius: 1.6rem;
         padding: 2rem;
+      }
+
+      .guessField {
+        border: 0.13rem solid #0bb1ce;
+      }
+
+      .guessSubmit,
+      .retry-button {
+        background-color: #0bb1ce;
+        color: #ffffff;
+        border: none;
+        border-radius: 1rem;
+        padding: 0.3rem;
       }
 
       .lastResult {
@@ -184,6 +197,7 @@
           // 다시하기 버튼 보이기
           const retryButton = document.createElement("button");
           retryButton.textContent = "다시하기";
+          retryButton.classList.add("retry-button");
           retryButton.addEventListener("click", initGame);
           lowOrHi.appendChild(retryButton);
         };
