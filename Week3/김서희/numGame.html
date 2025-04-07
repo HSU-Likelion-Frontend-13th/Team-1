@@ -115,7 +115,28 @@
         // 다시하기 버튼 보이기
         const retryButton = document.createElement("button");
         retryButton.textContent = "다시하기";
+        retryButton.addEventListener("click", initGame);
         lowOrHi.appendChild(retryButton);
+      }
+
+      // 게임을 다시 시작하기 위한 세팅
+      function initGame() {
+        randomNum = Math.floor(Math.random() * 100) + 1;
+        count = 1;
+
+        // guess 입력 창, 버튼 초기상태로
+        guessField.disabled = false;
+        guessSubmit.disabled = false;
+        guessField.value = "";
+        guessField.focus();
+
+        // resultParas 초기상태로
+        const resultParas = document.querySelectorAll(".resultParas p");
+        for (p of resultParas) {
+          p.textContent = "";
+        }
+
+        retryButton.remove(); // 다시하기 버튼 없애기
       }
 
       // 버튼 누르면 checkAnswer 이벤트
