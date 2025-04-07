@@ -83,10 +83,12 @@
           // 맞은 경우
           lastResult.textContent = "맞았습니다!";
           lowOrHi.textContent = "";
+          setRetryButton(); // 게임 다시하기 버튼
         } else if (count === 10) {
           // 10번 시도하면 종료
           lastResult.textContent = "다시 도전해 보세요.";
           lowOrHi.textContent = "";
+          setRetryButton(); // 게임 다시하기 버튼
         } else {
           // 틀린 경우
           lastResult.textContent = "틀렸습니다..";
@@ -102,6 +104,18 @@
 
         guessField.value = "";
         guessField.focus();
+      }
+
+      // 다시하기 버튼을 활성화하는 함수
+      function setRetryButton() {
+        // 입력 창과 버튼 비활성화
+        guessField.disabled = true;
+        guessSubmit.disabled = true;
+
+        // 다시하기 버튼 보이기
+        const retryButton = document.createElement("button");
+        retryButton.textContent = "다시하기";
+        lowOrHi.appendChild(retryButton);
       }
 
       // 버튼 누르면 checkAnswer 이벤트
