@@ -45,6 +45,7 @@
     <script>
         let count = 1;
         let randomNum = Math.floor(Math.random()*100) + 1;
+        let resetBtn;
         
         const guessField = document.querySelector('.guessField');
         const guessSubmit = document.querySelector('.guessSubmit');
@@ -85,6 +86,19 @@
             count++;
             guessField.value = '';
         })
+
+        const gameOver = ()=> {
+            guessField.disabled = true;
+            guessSubmit.disabled = true;
+
+            resetBtn = document.createElement('button');
+            resetBtn.textContent = '새 게임 시작하기'
+            resetBtn.style.marginLeft = '5px';
+
+            document.body.appendChild(resetBtn);
+            resetBtn.addEventListener('click', gameReset);
+        }
+
     </script>
 </body>
 </html>
