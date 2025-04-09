@@ -98,7 +98,18 @@
             document.body.appendChild(resetBtn);
             resetBtn.addEventListener('click', gameReset);
         }
+        const gameReset = ()=> {
+            count = 1;
+            guesses.textContent="";
+            lastResult.textContent = '';
+            lowOrHi.textContent = '';
 
+            guessField.disabled = false;
+            guessSubmit.disabled = false;
+            guessField.value = '';
+
+            resetBtn.remove();
+        }
     </script>
 </body>
 </html>
