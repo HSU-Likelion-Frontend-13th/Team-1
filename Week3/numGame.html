@@ -55,7 +55,7 @@
         const lastResult = document.querySelector('.lastResult');
         const lowOrHi = document.querySelector('.lowOrHi');
 
-        guessSubmit.addEventListener('click', ()=> {
+        guessSubmit.addEventListener('click', ()=> { // '예측한 숫자 제출하기' 버튼 클릭 시
             const userNum = Number(guessField.value);
 
             if (count === 1) {
@@ -84,10 +84,10 @@
                 }
             }
             count++;
-            guessField.value = '';
+            guessField.value = ''; // 입력창 초기화
         })
 
-        const gameOver = ()=> {
+        const gameOver = ()=> { // 게임 종료 시
             guessField.disabled = true;
             guessSubmit.disabled = true;
 
@@ -95,10 +95,10 @@
             resetBtn.textContent = '새 게임 시작하기'
             resetBtn.style.marginLeft = '5px';
 
-            document.body.appendChild(resetBtn);
+            resultParas.appendChild(resetBtn);
             resetBtn.addEventListener('click', gameReset);
         }
-        const gameReset = ()=> {
+        const gameReset = ()=> { // 게임 재시작
             count = 1;
             guesses.textContent="";
             lastResult.textContent = '';
