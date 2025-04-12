@@ -4,9 +4,7 @@ import LOGO from "../../assets/logo.svg";
 
 // Logo 스타일 컴포넌트
 const LogoBox = styled.div`
-  img {
-    width: 17.7vw;
-  }
+  width: 17.7vw;
 `;
 
 const LogoImg = styled.img`
