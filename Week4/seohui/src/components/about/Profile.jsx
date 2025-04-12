@@ -1,0 +1,82 @@
+import React from "react";
+import styled from "styled-components";
+import PROFILE from "../../assets/profile.jpg";
+import { FaPhone, FaEnvelope, FaLocationDot } from "react-icons/fa6";
+
+// Profile 스타일 컴포넌트
+const ProfileLayout = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  width: 19.79vw;
+  height: 25.93vw;
+  border-radius: 0.83vw;
+`;
+
+const ProfileImg = styled.img`
+  width: 10.41vw;
+  height: 10.41vw;
+  border-radius: 100%;
+`;
+
+const ProfileName = styled.div`
+  color: #4a86ff;
+  font-weight: bold;
+  font-size: 2.08vw;
+  padding: 1.3vw;
+`;
+
+const ProfileDetail = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.04vw;
+  text-align: start;
+  color: #484a64;
+  font-size: 0.83vw;
+  padding: 0px 2.08vw;
+`;
+
+const DetailItem = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.83vw;
+`;
+
+const Icon = styled.div`
+  font-size: 1.2vw;
+  color: #bfc4d8;
+`;
+
+const Profile = () => {
+  return (
+    <ProfileLayout>
+      <ProfileImg src={PROFILE} alt="프로필사진" />
+      <ProfileName>김서희</ProfileName>
+      <ProfileDetail>
+        <DetailItem>
+          <Icon>
+            <FaPhone />
+          </Icon>
+          010.9339.4039
+        </DetailItem>
+        <DetailItem>
+          <Icon>
+            <FaEnvelope />
+          </Icon>
+          2171186@hansung.ac.kr
+        </DetailItem>
+        <DetailItem>
+          <Icon>
+            <FaLocationDot />
+          </Icon>
+          서울특별시 성북구 보문로 30가길(안암동1가)
+        </DetailItem>
+      </ProfileDetail>
+    </ProfileLayout>
+  );
+};
+
+export default Profile;
