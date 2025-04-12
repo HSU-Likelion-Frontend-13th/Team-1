@@ -24,14 +24,26 @@ const HobbyList = styled.div`
   gap: 1.04vw;
 `;
 
+// Hobby 데이터
+const hobbyData = [
+  { title: "아이러브커피", img: COFFEE, alt: "커피" },
+  { title: "전시회 가기", img: EXHIBITION, alt: "전시회" },
+  { title: "강아지 산책", img: DOG, alt: "산책" },
+];
+
 const Hobby = () => {
   return (
     <HobbyLayout>
       <Title>HOBBY</Title>
       <HobbyList>
-        <HobbyItem title="아이러브커피" img={COFFEE} alt="커피" />
-        <HobbyItem title="전시회 가기" img={EXHIBITION} alt="전시회" />
-        <HobbyItem title="강아지 산책" img={DOG} alt="산책" />
+        {hobbyData.map((item, index) => (
+          <HobbyItem
+            key={index}
+            title={item.title}
+            img={item.img}
+            alt={item.alt}
+          />
+        ))}
       </HobbyList>
     </HobbyLayout>
   );
