@@ -1,3 +1,4 @@
+// Hobby 박스 아이템 하나
 import React from "react";
 import styled from "styled-components";
 

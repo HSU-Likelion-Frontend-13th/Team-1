@@ -1,3 +1,4 @@
+// 네비게이션 바에 들어가는 카테고리
 import React from "react";
 import styled from "styled-components";
 

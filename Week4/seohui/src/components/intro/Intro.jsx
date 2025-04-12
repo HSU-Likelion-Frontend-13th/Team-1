@@ -1,3 +1,4 @@
+// 중앙 Intro(소개글) 세션
 import React from "react";
 import styled from "styled-components";
 

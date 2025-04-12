@@ -1,3 +1,4 @@
+// Information Grid에 들어갈 정보 아이템
 import React from "react";
 import styled from "styled-components";
 

@@ -1,3 +1,4 @@
+// 왼쪽 흰색 프로필 카드
 import React from "react";
 import styled from "styled-components";
 import PROFILE from "../../assets/profile.jpg";

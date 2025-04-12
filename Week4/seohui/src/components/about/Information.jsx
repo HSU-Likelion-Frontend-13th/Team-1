@@ -1,3 +1,4 @@
+// EDUCATION, SKILLS, WORK, ACTIVITES 부분
 import React from "react";
 import styled from "styled-components";
 import InfoItem from "./InfoItem";

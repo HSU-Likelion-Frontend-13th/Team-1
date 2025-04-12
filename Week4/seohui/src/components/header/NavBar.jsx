@@ -1,3 +1,4 @@
+// 네비게이션 바
 import React from "react";
 import styled from "styled-components";
 import NavItem from "./NavItem";

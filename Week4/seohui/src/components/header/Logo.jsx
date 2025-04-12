@@ -1,3 +1,4 @@
+// 로고
 import React from "react";
 import styled from "styled-components";
 import LOGO from "../../assets/logo.svg";

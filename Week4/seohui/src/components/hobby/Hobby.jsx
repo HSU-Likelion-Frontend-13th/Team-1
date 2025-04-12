@@ -1,3 +1,4 @@
+// Hobby 세션
 import React from "react";
 import styled from "styled-components";
 import HobbyItem from "./HobbyItem";

@@ -1,3 +1,4 @@
+// 로고, 네비게이션 바 (헤더)
 import React from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
