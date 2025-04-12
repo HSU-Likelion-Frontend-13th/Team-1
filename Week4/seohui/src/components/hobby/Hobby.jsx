@@ -17,6 +17,7 @@ const Title = styled.h2`
   color: #4a86ff;
   font-weight: 800;
   font-size: 3.64vw;
+  padding: 3.12vw 0;
 `;
 
 const HobbyList = styled.div`

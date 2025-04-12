@@ -8,14 +8,14 @@ const HobbyItemLayout = styled.div`
   border-radius: 0.83vw;
   text-align: center;
   width: 19.79vw;
-  margin: 3.12vw 0;
+  margin-bottom: 3.12vw;
 `;
 
 const ItemTitle = styled.p`
   background-color: #4a86ff;
   color: #ffffff;
   font-size: 1.66vw;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 0.83vw 0.83vw 0 0;
   padding: 1.04vw;
 `;

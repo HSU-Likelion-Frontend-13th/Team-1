@@ -7,14 +7,14 @@ const InfoContainer = styled.div``;
 const InfoTitle = styled.p`
   color: #000000;
   font-size: 1.66vw;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 1.2vw;
 `;
 
 const InfoContent = styled.p`
   line-height: 1.5;
   font-size: 1.04vw;
-  font-weight: bold;
+  font-weight: 700;
   color: #626682;
 `;
 

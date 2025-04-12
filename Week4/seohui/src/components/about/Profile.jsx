@@ -14,6 +14,7 @@ const ProfileLayout = styled.div`
   width: 19.79vw;
   height: 25.93vw;
   border-radius: 0.83vw;
+  padding: 1.56vw 2.08vw;
 `;
 
 const ProfileImg = styled.img`
@@ -24,7 +25,7 @@ const ProfileImg = styled.img`
 
 const ProfileName = styled.div`
   color: #4a86ff;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2.08vw;
   padding: 1.3vw;
 `;
@@ -32,11 +33,11 @@ const ProfileName = styled.div`
 const ProfileDetail = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.04vw;
+  gap: 0.83vw;
   text-align: start;
   color: #484a64;
+  font-weight: 500;
   font-size: 0.83vw;
-  padding: 0px 2.08vw;
 `;
 
 const DetailItem = styled.div`
@@ -46,7 +47,7 @@ const DetailItem = styled.div`
 `;
 
 const Icon = styled.div`
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   color: #bfc4d8;
 `;
 
