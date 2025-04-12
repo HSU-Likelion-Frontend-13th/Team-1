@@ -23,7 +23,7 @@ const ProfileList = styled.div`
   justify-content: center;
   gap: 2.08vw;
   align-items: center;
-  margin-bottom: 7vw;
+  margin-bottom: 10.41vw;
 `;
 
 const About = () => {
