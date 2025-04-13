@@ -14,10 +14,10 @@ function App() {
         <Header />
       </header>
       <nav>
-
+        <Nav />
       </nav>
       <section>
-
+        <About />
       </section>
       <section>
 
