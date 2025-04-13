@@ -19,3 +19,35 @@ const H1 = styled.div`
     margin-bottom: 3.07vw; /* 59px */
     gap: 39.44vw;
 `;
+
+const HobbyTitle = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    p {
+        background-color: #4A86FF;
+    
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 1.67vw; /* 32px */
+        font-weight: 700;
+        padding-top: 1.1vw; /* 21px */
+    
+        width: 19.79vw; /* 380px */
+        height: 4.17vw; /* 80px */
+
+        border-radius: 1.04vw 1.04vw 0 0; /* 20px 20px 0 0*/
+    }
+`;
+
+const HobbyBox = styled.div`
+    background-color: #FFFFFF;
+    text-align: center;
+
+    width: 19.79vw; /* 380px */
+    height: 15.46vw; /* 297px */
+
+    margin-bottom: 17.83vw; /* 342px */
+    border-radius: 0 0 1.04vw 1.04vw;
+`;
