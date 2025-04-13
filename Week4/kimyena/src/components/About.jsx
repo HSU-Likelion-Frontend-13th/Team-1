@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import PROFILE from "../assets/about/profile.jpg";
+import ADDRESS from "../assets/about/address.png";
+import MAIL from "../assets/about/mail.png";
+import PHONE from "../assets/about/phone.png";
 
 const AboutLayout = styled.div`
     display: flex;
@@ -60,4 +63,19 @@ const Name = styled.div`
     font-weight: 700;
     font-size: 2.08vw;
     margin-bottom: 1.35vw;
+`;
+
+const Icon = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+const IconImg = styled.img`
+    width: 2.08vw; /* 40px */
+    height: 2.08vw; /* 40px */
+    gap: 0.42vw; /* 8px */
+    margin-right: 0.83vw; /* 16px */
+    margin-left: 2.08vw; /* 40px */
+    color: #BFC4D8;
 `;
