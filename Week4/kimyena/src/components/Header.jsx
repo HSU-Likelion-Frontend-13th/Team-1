@@ -23,3 +23,16 @@ const List = styled.div`
     gap: 4.17vw;
     font-size: 1.46vw;
 `;
+
+export default function Header() {
+    return (
+        <HeaderLayout>
+        <LogoImg src = {LOGO} />
+        <List>
+            <div>ABOUT</div>
+            <div>HOBBY</div>
+            <div>CONTACT</div>
+        </List>
+    </HeaderLayout>
+    )
+}
