@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
+import colors from "./color";
 
 const GlobalStyle = createGlobalStyle`
     ${reset}
@@ -10,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     
     body {
         font-family: 'Inter', sans-serif;
-        background-color: #f3f5ff;
+        background-color: ${colors.backgroundColor};
     }
 `;
 

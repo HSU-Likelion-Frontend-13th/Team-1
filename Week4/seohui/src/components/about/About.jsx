@@ -1,6 +1,7 @@
 // About 세션
 import React from "react";
 import styled from "styled-components";
+import colors from "../../styles/color";
 import Profile from "./Profile";
 import Information from "./Information";
 
@@ -13,7 +14,7 @@ const AboutLayout = styled.div`
 `;
 
 const Title = styled.h2`
-  color: #4a86ff;
+  color: ${colors.mainColor};
   font-weight: 800;
   font-size: 3.64vw;
   padding: 3.12vw 0;

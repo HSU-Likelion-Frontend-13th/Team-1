@@ -1,11 +1,12 @@
 // Hobby 박스 아이템 하나
 import React from "react";
 import styled from "styled-components";
+import colors from "../../styles/color";
 
 // HobbyItem 스타일 컴포넌트
 const HobbyItemLayout = styled.div`
-  background-color: #ffffff;
-  border: #ebedf8;
+  background-color: ${colors.white};
+  border: 0.05vw solid ${colors.white2};
   border-radius: 0.83vw;
   text-align: center;
   width: 19.79vw;
@@ -13,8 +14,8 @@ const HobbyItemLayout = styled.div`
 `;
 
 const ItemTitle = styled.p`
-  background-color: #4a86ff;
-  color: #ffffff;
+  background-color: ${colors.mainColor};
+  color: ${colors.white};
   font-size: 1.66vw;
   font-weight: 700;
   border-radius: 0.83vw 0.83vw 0 0;

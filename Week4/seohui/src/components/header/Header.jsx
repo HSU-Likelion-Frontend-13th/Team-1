@@ -1,6 +1,7 @@
 // 로고, 네비게이션 바 (헤더)
 import React from "react";
 import styled from "styled-components";
+import colors from "../../styles/color";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 
@@ -8,7 +9,7 @@ import NavBar from "./NavBar";
 const HeaderLayout = styled.nav`
   width: 100vw;
   height: 6.25vw;
-  background-color: #ffffff;
+  background-color: ${colors.white};
   display: flex;
   align-items: center;
   text-align: center;

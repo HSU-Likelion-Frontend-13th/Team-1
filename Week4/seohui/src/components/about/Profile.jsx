@@ -1,6 +1,7 @@
 // 왼쪽 흰색 프로필 카드
 import React from "react";
 import styled from "styled-components";
+import colors from "../../styles/color";
 import PROFILE from "../../assets/profile.jpg";
 import { FaPhone, FaEnvelope, FaLocationDot } from "react-icons/fa6";
 
@@ -11,7 +12,8 @@ const ProfileLayout = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #ffffff;
+  background-color: ${colors.white};
+  border: 0.05vw solid ${colors.white2};
   width: 19.79vw;
   height: 25.93vw;
   border-radius: 0.83vw;
@@ -25,7 +27,7 @@ const ProfileImg = styled.img`
 `;
 
 const ProfileName = styled.div`
-  color: #4a86ff;
+  color: ${colors.mainColor};
   font-weight: 700;
   font-size: 2.08vw;
   padding: 1.3vw;
@@ -36,7 +38,7 @@ const ProfileDetail = styled.div`
   flex-direction: column;
   gap: 0.83vw;
   text-align: start;
-  color: #484a64;
+  color: ${colors.profileTextColor};
   font-weight: 500;
   font-size: 0.83vw;
 `;
@@ -49,7 +51,7 @@ const DetailItem = styled.div`
 
 const Icon = styled.div`
   font-size: 1.5vw;
-  color: #bfc4d8;
+  color: ${colors.iconColor};
 `;
 
 const Profile = () => {

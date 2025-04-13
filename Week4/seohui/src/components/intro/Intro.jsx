@@ -1,6 +1,7 @@
 // 중앙 Intro(소개글) 세션
 import React from "react";
 import styled from "styled-components";
+import colors from "../../styles/color";
 
 // Intro 스타일 컴포넌트
 const IntroLayout = styled.div`
@@ -11,11 +12,11 @@ const IntroLayout = styled.div`
 
   width: 100vw;
   height: 41.66vw;
-  background-color: #4a86ff;
+  background-color: ${colors.mainColor};
 `;
 
 const IntroText = styled.p`
-  color: #ffffff;
+  color: ${colors.white};
   font-weight: bold;
   font-family: "Inter", sans-serif;
   font-size: 4.16vw;
