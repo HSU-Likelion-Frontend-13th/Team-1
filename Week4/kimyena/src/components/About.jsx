@@ -79,3 +79,50 @@ const IconImg = styled.img`
     margin-left: 2.08vw; /* 40px */
     color: #BFC4D8;
 `;
+
+const AboutInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: flex-start;
+    font-size: 0.83vw; /* 16px */
+    color: #484A64;
+
+    p {
+        display: flex;
+        align-items: center;
+    }
+`;
+
+const AboutListContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);    
+    gap: 11.25vw;
+`;
+
+const H2 = styled.div`
+    font-size: 1.67vw; /* 32px */
+    font-weight: 800;
+    margin-bottom: 1.2vw;
+`;
+
+const AboutList = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #626682;
+    font-weight: bold;
+    font-size: 1.04vw;
+
+    p {
+        line-height: 170%;
+    }
+`;
+
+const AboutItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+`;
