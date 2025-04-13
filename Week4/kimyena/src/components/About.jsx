@@ -126,3 +126,63 @@ const AboutItem = styled.div`
     justify-content: flex-start;
     align-items: left;
 `;
+
+export default function About() {
+    return (
+      <AboutLayout>
+        <H1>ABOUT</H1>
+        <AboutContent>
+          <AboutBox>
+            <AboutImage>
+            <AboutImg src= {PROFILE} />
+            </AboutImage>
+            <Name>김예나</Name>
+            <AboutInfo>
+              <Icon>
+                <IconImg src={PHONE} />
+                <p>010.9041.4042</p>
+              </Icon>
+              <Icon>
+                <IconImg src={MAIL} />
+                <p>2371429@hansung.ac.kr</p>
+              </Icon>
+              <Icon>
+                <IconImg src={ADDRESS} />
+                <p>경기도 부천시</p>
+              </Icon>
+            </AboutInfo>
+          </AboutBox>
+          <AboutListContainer>
+            <AboutItem>
+              <H2>EDUCATION</H2>
+              <AboutList>
+                <p>한성대학교 컴퓨터공학부<br />
+                2023. 03. - 2026. 02.</p>
+              </AboutList>
+            </AboutItem>
+            <AboutItem>
+              <H2>SKILLS</H2>
+              <AboutList>
+                <p>HTML<br />
+                CSS<br />
+                Java</p>
+              </AboutList>
+            </AboutItem>
+            <AboutItem>
+              <H2>WORK</H2>
+              <AboutList>
+                <p>프론트엔드 개발자</p>
+              </AboutList>
+            </AboutItem>
+            <AboutItem>
+              <H2>ACTIVITIES</H2>
+              <AboutList>
+                <p>멋쟁이 사자처럼 13기</p>
+              </AboutList>
+            </AboutItem>
+          </AboutListContainer>
+        </AboutContent>
+        <H1>HOBBY</H1>
+      </AboutLayout>
+    )
+  }
