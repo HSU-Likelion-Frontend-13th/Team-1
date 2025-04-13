@@ -62,3 +62,28 @@ const HobbyImg = styled.img`
     align-items: center;
     border-radius: 1.04vw; /* 20px */
 `;
+
+export default function Hobby() {
+    return (
+        <HobbyLayout>
+            <HobbyTitle>
+                <p>야구 보러 가기</p>
+                <HobbyBox>
+                    <HobbyImg src = {HOBBY1} />
+                </HobbyBox>
+            </HobbyTitle>
+            <HobbyTitle>
+                <p>음악 듣기</p>
+                <HobbyBox>
+                    <HobbyImg src = {HOBBY2} />
+                </HobbyBox>
+            </HobbyTitle>
+            <HobbyTitle>
+                <p>뜨개질하기</p>
+                <HobbyBox>
+                    <HobbyImg src = {HOBBY3} />
+                </HobbyBox>
+            </HobbyTitle>
+        </HobbyLayout>
+    )
+}
