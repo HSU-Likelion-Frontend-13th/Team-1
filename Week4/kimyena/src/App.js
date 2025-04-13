@@ -20,7 +20,7 @@ function App() {
         <About />
       </section>
       <section>
-
+        <Hobby />
       </section>
     </div>
   )
