@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import HOBBY1 from "../assets/hobby/1.jpg";
+import HOBBY2 from "../assets/hobby/2.jpg";
+import HOBBY3 from "../assets/hobby/3.jpg";
 
 const HobbyLayout = styled.div`
     display: flex;
@@ -50,4 +53,12 @@ const HobbyBox = styled.div`
 
     margin-bottom: 17.83vw; /* 342px */
     border-radius: 0 0 1.04vw 1.04vw;
+`;
+
+const HobbyImg = styled.img`
+    width: 15.62vw; /* 300px */
+    height: 11.46vw; /* 220px */
+    margin-top: 1.93vw; /* 37px */
+    align-items: center;
+    border-radius: 1.04vw; /* 20px */
 `;
