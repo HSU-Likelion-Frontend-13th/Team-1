@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PROFILE from "../assets/about/profile.jpg";
 
 const AboutLayout = styled.div`
     display: flex;
@@ -46,6 +47,12 @@ const AboutImage = styled.div`
     border-radius: 50%;
     margin-left: 4.79vw; /* 92px */
     margin-bottom: 1.3vw; /* 25px */
+`;
+
+const AboutImg = styled.img`
+    width: 10.23vw; /* 196.08px */
+    height: 10.42vw; /* 200px */
+    border-radius: 50%;
 `;
 
 const Name = styled.div`
