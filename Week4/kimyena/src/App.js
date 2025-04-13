@@ -9,8 +9,9 @@ import Hobby from "./components/Hobby";
 function App() {
   return (
     <div className="App">
+      <GlobalStyle />
       <header>
-
+        <Header />
       </header>
       <nav>
 
@@ -19,7 +20,7 @@ function App() {
 
       </section>
       <section>
-        
+
       </section>
     </div>
   )
