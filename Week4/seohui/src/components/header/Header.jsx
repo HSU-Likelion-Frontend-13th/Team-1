@@ -7,7 +7,7 @@ import NavBar from "./NavBar";
 
 // Header 스타일 컴포넌트
 const HeaderLayout = styled.nav`
-  width: 100vw;
+  width: 100%;
   height: 6.25vw;
   background-color: ${colors.white};
   display: flex;

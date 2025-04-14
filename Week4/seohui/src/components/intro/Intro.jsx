@@ -10,7 +10,7 @@ const IntroLayout = styled.div`
   align-items: center;
   text-align: center;
 
-  width: 100vw;
+  width: 100%;
   height: 41.66vw;
   background-color: ${colors.mainColor};
 `;
