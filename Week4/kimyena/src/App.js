@@ -23,7 +23,7 @@ function App() {
         <Hobby />
       </section>
     </div>
-  )
+  );
 }
 
 export default App;

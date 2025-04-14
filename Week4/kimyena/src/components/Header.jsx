@@ -34,5 +34,5 @@ export default function Header() {
             <div>CONTACT</div>
         </List>
     </HeaderLayout>
-    )
+    );
 }

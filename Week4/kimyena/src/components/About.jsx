@@ -184,5 +184,5 @@ export default function About() {
         </AboutContent>
         <H1>HOBBY</H1>
       </AboutLayout>
-    )
+    );
   }
