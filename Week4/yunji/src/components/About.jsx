@@ -28,7 +28,7 @@ const Aboutbox = styled.div`
 const Profile = styled.div`
     background-color: white;
     padding: 1.56vw;
-    border-radius: 16px
+    border-radius: 16px;
 `;
 
 const H3 = styled.h3`
@@ -40,7 +40,7 @@ const H3 = styled.h3`
 const Items = styled.div``;
 
 const ItemsCard = styled.div`
-    dissplay: flex;
+    display: flex;
     align-items: center;
     gap: 16px;
 
