@@ -18,7 +18,6 @@ const H2 = styled.h2`
 
 const Aboutbox = styled.div`
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 2.08vw;
     margin-left: 370px;
@@ -63,6 +62,7 @@ const Details = styled.div`
 
     h3 {
         font-size: 2rem;
+        color : black;
     }
 `;
 

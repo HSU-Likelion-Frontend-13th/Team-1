@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HeaderLayout = styled.header`
     display: flex;
-    justify-content: conter;
+    justify-content: center;
     align-items: center;
     background: white;
     height: 6.25vw;
