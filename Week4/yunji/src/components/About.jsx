@@ -30,6 +30,14 @@ const Profile = styled.div`
     border-radius: 16px;
 `;
 
+const ProfileImage = styled.img`
+    width: 13.61vw;
+    height: 13.88vw;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+`;
+
 const H3 = styled.h3`
     font-size: 2.08vw;
     color: #4A86FF;
@@ -63,6 +71,7 @@ const Details = styled.div`
     h3 {
         font-size: 2rem;
         color : black;
+        text-align: left;
     }
 `;
 
@@ -72,7 +81,7 @@ export default function About() {
         <H2>ABOUT</H2>
         <Aboutbox>
             <Profile>
-                <img src={PROFILE} alt="프로필" />
+                <ProfileImage img src={PROFILE} alt="프로필" />
                 <H3>조윤지</H3>
                 <Items>
                     <ItemsCard>
