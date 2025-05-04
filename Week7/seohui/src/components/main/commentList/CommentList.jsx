@@ -20,7 +20,7 @@ const CommentList = () => {
   }, [commentList]);
 
   return (
-    <S.TodoListLayout>
+    <S.CommentListLayout>
       <S.SectionTitle>✏️ 댓글 작성</S.SectionTitle>
       {/* 입력창, 추가버튼 컴포넌트 */}
       <CommentEditor
@@ -29,7 +29,7 @@ const CommentList = () => {
         addComment={addComment}
       />
       {/* 댓글 목록 */}
-    </S.TodoListLayout>
+    </S.CommentListLayout>
   );
 };
 

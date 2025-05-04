@@ -5,10 +5,10 @@ import Button from "../Button";
 
 const CommentEditor = ({ inputText, setInputText, addComment }) => {
   return (
-    <S.AddTodoWrapper>
+    <S.AddCommentWrapper>
       <Input inputText={inputText} setInputText={setInputText} />
       <Button text={"작성하기"} onClick={addComment}></Button>
-    </S.AddTodoWrapper>
+    </S.AddCommentWrapper>
   );
 };
 
