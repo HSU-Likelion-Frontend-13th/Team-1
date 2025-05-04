@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CommentEditor from "./CommentEditor";
-//import TodoItem from "./TodoItem";
+import CommentItem from "./CommentItem";
 import * as S from "../Main.style";
 
 const CommentList = () => {
@@ -29,6 +29,16 @@ const CommentList = () => {
         addComment={addComment}
       />
       {/* 댓글 목록 */}
+      <S.CommentListWrapper>
+        {commentList.map((c, index) => (
+          <CommentItem
+            key={index}
+            commentText={c}
+            commentList={commentList}
+            setCommentList={setCommentList}
+          />
+        ))}
+      </S.CommentListWrapper>
     </S.CommentListLayout>
   );
 };
