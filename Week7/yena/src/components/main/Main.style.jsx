@@ -76,3 +76,23 @@ export const DeleteButton = styled.button`
 `;
 
 export const CommentText = styled.div``;
+
+export const EditButton = styled.button`
+  width: 70px;
+  height: 25px;
+  border: 1px solid grey;
+  background-color: white;
+`;
+
+export const DeleteAndEdit = styled.div`
+  display: flex;
+  gap: 0.3rem;
+`;
+
+export const EditInput = styled.input`
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+`;
