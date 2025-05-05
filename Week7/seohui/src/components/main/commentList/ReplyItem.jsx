@@ -5,8 +5,11 @@ import * as S from "../Main.style";
 const ReplyItem = ({ reply, comment, commentList, setCommentList }) => {
   // 대댓글 삭제하기
   const deleteReply = () => {
+    // 해당 Reply가 아닌 애들끼리 배열 업데이트
     const updatedReplies = comment.replies.filter((r) => r.id !== reply.id);
     const updatedComment = { ...comment, replies: updatedReplies };
+
+    // 해당 댓글만 새로운 댓글 객체로 갱신
     setCommentList(
       commentList.map((c) => (c.id === comment.id ? updatedComment : c))
     );

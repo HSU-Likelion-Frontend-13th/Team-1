@@ -34,6 +34,7 @@ const CommentItem = ({ comment, commentList, setCommentList }) => {
     // 아무것도 입력 안했을 때
     if (replyText.trim() === "") return;
 
+    // 대댓글 목록을 추가한 새로운 댓글 객체 생성
     const updatedComment = {
       ...comment,
       replies: [
@@ -41,6 +42,7 @@ const CommentItem = ({ comment, commentList, setCommentList }) => {
         { id: Date.now(), text: replyText },
       ],
     };
+    // 해당 댓글만 새로운 객체로 갱신
     setCommentList(
       commentList.map((c) => (c.id === comment.id ? updatedComment : c))
     );
