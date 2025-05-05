@@ -56,3 +56,23 @@ export const AddCommentWrapper = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+/* commentitem */
+export const CommentItemLayout = styled.div`
+  width: 70%;
+  height: 4rem;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem;
+`;
+
+export const DeleteButton = styled.button`
+  width: 70px;
+  height: 25px;
+  border: 1px solid grey;
+  background-color: white;
+`;
+
+export const CommentText = styled.div``;
