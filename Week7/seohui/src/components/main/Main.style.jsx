@@ -63,6 +63,11 @@ export const ButtonContainer = styled.div`
 `;
 
 // CommentItem
+export const CommentTop = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 export const DeleteButton = styled.button`
   width: 50px;
   color: red;
@@ -72,11 +77,10 @@ export const DeleteButton = styled.button`
 
 export const CommentItemLayout = styled.div`
   width: 85%;
-  height: 4rem;
   border: 1px solid gray;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   padding: 0.6rem;
 `;
 
@@ -84,10 +88,22 @@ export const CommentText = styled.div``;
 
 export const DateText = styled.div``;
 
+export const ReplyText = styled.div`
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+`;
+
 export const EditButton = styled.button`
   width: 50px;
   height: 30px;
   border: 1px solid grey;
+  font-size: 0.8rem;
+`;
+
+export const ReplyButton = styled.button`
+  width: 50px;
+  height: 30px;
+  border: 1px solid black;
   font-size: 0.8rem;
 `;
 

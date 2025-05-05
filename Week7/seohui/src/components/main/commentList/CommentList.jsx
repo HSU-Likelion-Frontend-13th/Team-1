@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import CommentEditor from "./CommentEditor";
 import CommentItem from "./CommentItem";
 import * as S from "../Main.style";
@@ -14,15 +14,12 @@ const CommentList = () => {
 
     const comment = {
       id: Date.now(), // 고유 id 부여
-      text: inputText,
+      text: inputText, // 텍스트
+      replies: [], // 대댓글
     };
     setCommentList([...commentList, comment]); // 목록에 추가
     setInputText(""); // 입력창 초기화
   };
-
-  useEffect(() => {
-    console.log("댓글: " + commentList);
-  }, [commentList]);
 
   return (
     <S.CommentListLayout>
