@@ -11,7 +11,12 @@ const CommentList = () => {
   const addComment = () => {
     // 아무것도 입력 안했을 때
     if (inputText.trim() === "") return;
-    setCommentList([...commentList, inputText]); // 목록에 추가
+
+    const comment = {
+      id: Date.now(), // 고유 id 부여
+      text: inputText,
+    };
+    setCommentList([...commentList, comment]); // 목록에 추가
     setInputText(""); // 입력창 초기화
   };
 
@@ -30,10 +35,10 @@ const CommentList = () => {
       />
       {/* 댓글 목록 */}
       <S.CommentListWrapper>
-        {commentList.map((c, index) => (
+        {commentList.map((c) => (
           <CommentItem
-            key={index}
-            commentText={c}
+            key={c.id} // 고유 id 식별 키
+            comment={c}
             commentList={commentList}
             setCommentList={setCommentList}
           />
