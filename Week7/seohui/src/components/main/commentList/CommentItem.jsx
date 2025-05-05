@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import * as S from "../Main.style";
 import CommentEditor from "./CommentEditor";
+import ReplyItem from "./ReplyItem";
 
 const CommentItem = ({ comment, commentList, setCommentList }) => {
   const [isEditing, setIsEditing] = useState(false); // 편집 여부
@@ -71,7 +72,13 @@ const CommentItem = ({ comment, commentList, setCommentList }) => {
       {/* 답글 목록 */}
       {comment.replies &&
         comment.replies.map((reply) => (
-          <S.ReplyText key={reply.id}>&gt;&gt; {reply.text}</S.ReplyText>
+          <ReplyItem
+            key={reply.id}
+            reply={reply}
+            comment={comment}
+            commentList={commentList}
+            setCommentList={setCommentList}
+          />
         ))}
 
       {isReplying && (
