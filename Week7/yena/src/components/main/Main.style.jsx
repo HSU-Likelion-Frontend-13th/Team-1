@@ -30,3 +30,21 @@ export const InputContainer = styled.input`
   width: 100%;
   height: 100%;
 `;
+
+/* button */
+export const ButtonLayout = styled.button`
+  width: 100px;
+  height: 3rem;
+  border: none;
+  text-align: center;
+  background-color: #5664f5;
+`;
+
+export const ButtonContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+`;
