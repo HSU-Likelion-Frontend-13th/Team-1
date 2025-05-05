@@ -88,22 +88,10 @@ export const CommentText = styled.div``;
 
 export const DateText = styled.div``;
 
-export const ReplyText = styled.div`
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
-`;
-
 export const EditButton = styled.button`
   width: 50px;
   height: 30px;
   border: 1px solid grey;
-  font-size: 0.8rem;
-`;
-
-export const ReplyButton = styled.button`
-  width: 50px;
-  height: 30px;
-  border: 1px solid black;
   font-size: 0.8rem;
 `;
 
@@ -115,4 +103,32 @@ export const DeleteAndEdit = styled.div`
 export const EditInput = styled.input`
   width: 100%;
   height: 100%;
+`;
+
+// ReplyItem
+export const ReplyWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding-left: 0.5rem;
+  margin-top: 0.4rem;
+`;
+
+export const ReplyText = styled.div`
+  font-size: 0.8rem;
+`;
+
+export const ReplyButton = styled.button`
+  width: 50px;
+  height: 30px;
+  border: 1px solid black;
+  font-size: 0.8rem;
+`;
+
+export const ReplyDeleteButton = styled.button`
+  font-size: 0.8rem;
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
 `;
