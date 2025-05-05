@@ -3,6 +3,7 @@ import * as S from "../Main.style";
 import Input from "../Input";
 import Button from "../Button";
 
+// 댓글 입력창, 입력 버튼
 const CommentEditor = ({ inputText, setInputText, addComment }) => {
   return (
     <S.AddCommentWrapper>

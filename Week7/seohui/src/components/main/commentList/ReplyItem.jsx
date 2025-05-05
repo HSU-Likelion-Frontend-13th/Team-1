@@ -1,8 +1,9 @@
 import React from "react";
 import * as S from "../Main.style";
 
+// 대댓글 하나
 const ReplyItem = ({ reply, comment, commentList, setCommentList }) => {
-  // 대댓글 삭제
+  // 대댓글 삭제하기
   const deleteReply = () => {
     const updatedReplies = comment.replies.filter((r) => r.id !== reply.id);
     const updatedComment = { ...comment, replies: updatedReplies };

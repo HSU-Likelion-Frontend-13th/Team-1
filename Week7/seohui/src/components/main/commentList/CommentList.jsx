@@ -3,6 +3,7 @@ import CommentEditor from "./CommentEditor";
 import CommentItem from "./CommentItem";
 import * as S from "../Main.style";
 
+// 댓글 목록
 const CommentList = () => {
   const [commentList, setCommentList] = useState([]); // 댓글 목록
   const [inputText, setInputText] = useState(""); // 댓글 입력창

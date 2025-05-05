@@ -4,6 +4,7 @@ import * as S from "../Main.style";
 import CommentEditor from "./CommentEditor";
 import ReplyItem from "./ReplyItem";
 
+// 댓글 하나
 const CommentItem = ({ comment, commentList, setCommentList }) => {
   const [isEditing, setIsEditing] = useState(false); // 편집 여부
   const [editedText, setEditedText] = useState(comment.text); // 수정할 댓글
@@ -50,6 +51,7 @@ const CommentItem = ({ comment, commentList, setCommentList }) => {
 
   return (
     <S.CommentItemLayout>
+      {/* 댓글내용과 버튼들 */}
       <S.CommentTop>
         {isEditing ? (
           <S.EditInput
@@ -69,7 +71,8 @@ const CommentItem = ({ comment, commentList, setCommentList }) => {
           </S.ReplyButton>
         </S.DeleteAndEdit>
       </S.CommentTop>
-      {/* 답글 목록 */}
+
+      {/* 대댓글 목록 */}
       {comment.replies &&
         comment.replies.map((reply) => (
           <ReplyItem
@@ -81,6 +84,7 @@ const CommentItem = ({ comment, commentList, setCommentList }) => {
           />
         ))}
 
+      {/* 대댓글 입력창 */}
       {isReplying && (
         <CommentEditor
           inputText={replyText}
