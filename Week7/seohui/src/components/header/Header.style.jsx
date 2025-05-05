@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../styles/colors";
 
 export const HeaderLayout = styled.div`
   width: 100vw;
@@ -6,7 +7,7 @@ export const HeaderLayout = styled.div`
   display: flex;
   align-items: center;
   padding-left: 1.2rem;
-  background-color: #c7c7f1;
+  background-color: ${colors.backgroundColor};
   gap: 0.5rem;
 `;
 

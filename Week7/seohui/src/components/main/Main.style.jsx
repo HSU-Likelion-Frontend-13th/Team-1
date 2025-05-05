@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../styles/colors";
 
 export const SectionTitle = styled.div`
   font-size: larger;
@@ -50,7 +51,7 @@ export const ButtonLayout = styled.button`
   height: 3rem;
 
   text-align: center;
-  background-color: #5664f5;
+  background-color: ${colors.buttonColor};
 `;
 
 export const ButtonContainer = styled.div`
@@ -70,8 +71,8 @@ export const CommentTop = styled.div`
 `;
 export const DeleteButton = styled.button`
   width: 50px;
-  color: red;
-  border: 1px solid red;
+  color: ${colors.deleteColor};
+  border: 1px solid ${colors.deleteColor};
   font-size: 0.8rem;
 `;
 
@@ -127,7 +128,7 @@ export const ReplyButton = styled.button`
 
 export const ReplyDeleteButton = styled.button`
   font-size: 0.8rem;
-  color: red;
+  color: ${colors.deleteColor};
   background: none;
   border: none;
   cursor: pointer;
