@@ -48,3 +48,11 @@ export const ButtonContainer = styled.div`
   align-items: center;
   color: white;
 `;
+
+/* commenteditor */
+export const AddCommentWrapper = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+`;
