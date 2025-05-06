@@ -32,16 +32,16 @@ export default function CommentItem({ commentText, comment, setComment}) {
                         onChange = { (e) => setEdit(e.target.value) }
                     />
                     <S.DeleteAndEdit>
-                        <S.EditButton onClick = { finishEditing }>수정 완료</S.EditButton>
                         <S.DeleteButton onClick = { deleteComment }>삭제</S.DeleteButton>
+                        <S.EditButton onClick = { finishEditing }>수정 완료</S.EditButton>
                     </S.DeleteAndEdit>
                 </>
             ) : (
                 <>
                     <S.CommentText>{ commentText }</S.CommentText>
                     <S.DeleteAndEdit>
-                        <S.EditButton onClick = { editComment }>수정</S.EditButton>
                         <S.DeleteButton onClick = { deleteComment }>삭제</S.DeleteButton>
+                        <S.EditButton onClick = { editComment }>수정</S.EditButton>
                     </S.DeleteAndEdit>
                 </>
             )}
