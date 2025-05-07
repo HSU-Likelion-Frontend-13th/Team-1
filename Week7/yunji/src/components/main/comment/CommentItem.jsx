@@ -16,6 +16,15 @@ export default function CommentItem({ text, index, onDelete, onUpdate }) {
     
     return (
     <S.CommentItemLayout>
+        {isEdit ? (
+            <S.EditInput
+                value={newText}
+                onChange={(e) => setNewText(e.target.value)}
+            />
+        ) : (
+        <S.CommentText>{text}</S.CommentText>
+        )}
+
     <S.DeleteAndEdit>
             <S.EditButton onClick={isEdit ? changeComment : () => setIsEdit(true)}>
             {isEdit ? "수정완료" : "수정"}
