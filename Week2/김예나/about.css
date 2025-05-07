@@ -17,7 +17,7 @@ h1 {
 .about-content {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     gap: 2.08vw; /* 40px */
 
@@ -35,7 +35,7 @@ h1 {
     text-align: center;
     border-radius: 1.04vw; /* 20px */
 
-    margin-left: 19.38vw; /* 370px */
+    /* margin-left: 19.38vw; 370px */
     margin-bottom: 2.29vw; /* 44px */
 }
 
