@@ -108,7 +108,7 @@ export const CommentText = styled.div``;
 export const DateText = styled.div``;
 
 export const EditButton = styled.button`
-    width: 50px;
+    width: 70px;
     height: 30px;
     border: 1px solid grey;
 `;
